@@ -102,7 +102,10 @@ public class BlogController {
 	}
 	private List<Blog> searchInBlog(String query,List<Blog> blogs){
 		return blogs.stream()
-				.filter(blog->blog.getTitle().contains(query)||blog.getSubtitle().contains(query))
+				.filter(blog->blog.getTitle().contains(query)
+						|| blog.getSubtitle().contains(query)
+						|| blog.getContents().toString().contains(query)
+						|| blog.getHashtags().toString().contains(query))
 				.collect(Collectors.toList());
 	}
 	private List<Blog> searchInAuthor(String query,List<Blog> blogs){

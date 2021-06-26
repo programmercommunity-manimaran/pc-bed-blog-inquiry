@@ -94,7 +94,7 @@ public class BlogController {
 		    	format = o2.getAddedDate().contains(" ") ? 
 		    			DateTimeFormats.DATE_TIME_FORMAT:DateTimeFormats.DATE_FORMAT;
 		    	Date o2Date = fromString(o1.getAddedDate(),format);
-		        return o2Date.compareTo(o1Date);
+		        return -(o2Date.compareTo(o1Date));
 		    }
 		};
 		Collections.sort(blogs, compareByAddeddate);

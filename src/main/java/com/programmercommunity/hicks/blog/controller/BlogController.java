@@ -97,8 +97,11 @@ public class BlogController {
 		        return o1Date.compareTo(o2Date);
 		    }
 		};
+		/*
 		Collections.sort(blogs, compareByAddeddate);
 		return blogs;
+		*/
+		return blogs.stream().sorted(compareByAddeddate).toList();
 	}
 	private List<Blog> searchInBlog(String query,List<Blog> blogs){
 		return blogs.stream()

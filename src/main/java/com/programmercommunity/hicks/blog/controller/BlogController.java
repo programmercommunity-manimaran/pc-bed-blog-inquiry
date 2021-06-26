@@ -77,7 +77,7 @@ public class BlogController {
 		Comparator<Blog> compareByLikes = new Comparator<Blog>() {
 		    @Override
 		    public int compare(Blog o1, Blog o2) {
-		        return o1.getLikes() > o2.getLikes() ? 1:-1;
+		        return o1.getLikes() < o2.getLikes() ? 1:-1;
 		    }
 		};
 		Collections.sort(blogs, compareByLikes);

@@ -1,0 +1,101 @@
+{
+	"id": "00a4175d-2c42-87c6-b132-4616f875166f",
+	"name": "PC Blog inquiry",
+	"description": "",
+	"order": [
+		"e4cc4ca6-ce7c-4c8a-22b4-6ef8b1a322a8",
+		"8f4ae1ba-5172-eb4b-011c-77eaa51e5d1c",
+		"c0dc8a5a-2eb5-a89d-be4d-96c748f1502c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1624698854442,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "8f4ae1ba-5172-eb4b-011c-77eaa51e5d1c",
+			"headers": "",
+			"headerData": [],
+			"url": "https://hiks-pc-blog-inq-api-v1.herokuapp.com/blogs/toprated/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "00a4175d-2c42-87c6-b132-4616f875166f",
+			"data": null,
+			"dataMode": "params",
+			"name": "toprated blogs",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624698911970,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c0dc8a5a-2eb5-a89d-be4d-96c748f1502c",
+			"headers": "",
+			"headerData": [],
+			"url": "https://hiks-pc-blog-inq-api-v1.herokuapp.com/blogs/search/?query=Language&source=blog",
+			"queryParams": [
+				{
+					"key": "query",
+					"value": "Language",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "source",
+					"value": "blog",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "00a4175d-2c42-87c6-b132-4616f875166f",
+			"data": null,
+			"dataMode": "params",
+			"name": "blog search",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624698972301,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e4cc4ca6-ce7c-4c8a-22b4-6ef8b1a322a8",
+			"headers": "",
+			"headerData": [],
+			"url": "https://hiks-pc-blog-inq-api-v1.herokuapp.com/blogs/latest/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "00a4175d-2c42-87c6-b132-4616f875166f",
+			"data": null,
+			"dataMode": "params",
+			"name": "latest blogs",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1624698857770,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

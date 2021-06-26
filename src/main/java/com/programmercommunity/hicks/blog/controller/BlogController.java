@@ -97,7 +97,8 @@ public class BlogController {
 		        return o1Date.compareTo(o2Date);
 		    }
 		};
-		Collections.reverse(Collections.sort(blogs, compareByAddeddate));
+		Collections.sort(blogs, compareByAddeddate)
+		Collections.reverse(blogs);
 		return blogs;
 	}
 	private List<Blog> searchInBlog(String query,List<Blog> blogs){

@@ -98,7 +98,6 @@ public class BlogController {
 		    }
 		};
 		Collections.sort(blogs, compareByAddeddate);
-		Collections.reverse(blogs);
 		return blogs;
 	}
 	private List<Blog> searchInBlog(String query,List<Blog> blogs){
